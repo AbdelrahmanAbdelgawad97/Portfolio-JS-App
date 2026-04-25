@@ -300,25 +300,20 @@ button {
 .hero-section {
     min-height: 100vh;
 }
-
 .available {
     width: fit-content;
     padding: 3px 9px;
-    background-color: rgba(0, 208, 142, 0.2);
-    border: #00d08e 1px solid ;
-    color: #00d08e;
+    background-color: var(--changed-color-opacity);
+    border: var(--changed-color) 1px solid;
+    color: var(--changed-color);
 }
 
 .point {
     width: 12px;
     height: 12px;
-    background-color: #00d08e;
+    background-color: var(--changed-color);
     display: inline-block;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     margin-left: 10px;
     position: relative;
 }
@@ -326,24 +321,16 @@ button {
 .point::after {
     content: "";
     position: absolute;
-    background-color: #00d08e;
+    background-color: var(--changed-color);
     height: 60%;
     width: 60%;
     top: 50%;
     left: 50%;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     transform: translate(-50% , -50%);
-    -webkit-transform: translate(-50% , -50%);
-    -moz-transform: translate(-50% , -50%);
-    -ms-transform: translate(-50% , -50%);
-    -o-transform: translate(-50% , -50%);
     animation: myPointAnimation 1s linear infinite;
-    -webkit-animation: myPointAnimation 1s linear infinite;
 }
+
 
 @keyframes myPointAnimation {
   0% {
